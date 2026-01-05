@@ -83,7 +83,7 @@ Barista ma również możliwość skasowania konkretnych zamówień poprzez uży
 <img width="643" height="713" alt="image" src="https://github.com/user-attachments/assets/050e335d-a96a-490d-bab8-1aa2fccbfe49" />
 
 ## Uruchomienie aplikacji
-Aby uruchomić aplikację należy zbudować rozwiązanie dołączone do repozytorium `.sln` lub pobrać plik `.zip` z gotowym plikiem .exe.
+Aby uruchomić aplikację należy zbudować rozwiązanie dołączone do repozytorium `.sln`.
 
 ---
 ## 📁 Struktura Projektu
