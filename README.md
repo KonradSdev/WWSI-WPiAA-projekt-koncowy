@@ -23,7 +23,7 @@ Projekt realizuje system obsługi zamówień w kawiarni, kładąc nacisk na elas
 * **Uzasadnienie:** Pozwala dynamicznie nakładać dodatkowe właściwości (koszt i opis) na bazowy produkt w czasie działania programu. Możemy "opakować" kawę w dowolną liczbę dodatków bez tworzenia dziesiątek podklas.
 
 ### 4. Facade (Wzorzec Strukturalny)
-* **Lokalizacja:** `DesignPatterns/Structural/OrderFulfillmentFacade.cs`.
+* **Lokalizacja:** `DesignPatterns/Structural/OrderFulfillmentFacade.cs`, `DesignPatterns/Structural/OrderPlacementFacade.cs`.
 * **Problem:** Złożoność procesu realizacji zamówienia, obejmująca wycenę, zmianę statusów oraz komunikację między różnymi systemami.
 * **Uzasadnienie:** Fasada udostępnia prosty interfejs `ProcessAndCompleteOrder(id)`. Ukrywa ona przed UI skomplikowane kroki (obliczanie ceny końcowej, wielokrotne zmiany statusu), co upraszcza kod formularza i zmniejsza ryzyko błędów.
 
