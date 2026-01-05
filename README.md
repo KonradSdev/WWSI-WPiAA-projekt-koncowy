@@ -8,9 +8,9 @@ Projekt realizuje system obsługi zamówień w kawiarni, kładąc nacisk na elas
 ## 🏗️ Wykorzystane Wzorce Projektowe
 
 ### 1. Factory Method (Wzorzec Kreacyjny)
-* **Lokalizacja:** `DesignPatterns/Creational` (`ProductFactory`, `CoffeeFactory`, `CakeFactory`).
-* **Problem:** System musi tworzyć różne obiekty produktów (Kawa, Ciasto) bez znajomości ich konkretnych klas implementacyjnych.
-* **Uzasadnienie:** Dzięki zastosowaniu fabryk, interfejs użytkownika (UI) nie musi wiedzieć, jak zainicjalizować konkretny produkt. Dodanie nowej pozycji do menu (np. herbaty) wymaga jedynie stworzenia nowej klasy fabryki, bez modyfikacji istniejącego kodu UI.
+* **Lokalizacja:** `DesignPatterns/Creational` (`ProductFactory`, `CoffeeFactory`, `CakeFactory`, `TeaFactory`).
+* **Problem:** System musi tworzyć różne obiekty produktów (Kawa, Ciasto, Herbata) bez znajomości ich konkretnych klas implementacyjnych.
+* **Uzasadnienie:** Dzięki zastosowaniu fabryk, interfejs użytkownika (UI) nie musi wiedzieć, jak zainicjalizować konkretny produkt. Dodanie nowej pozycji do menu (np. Matcha) wymaga jedynie stworzenia nowej klasy fabryki, bez modyfikacji istniejącego kodu UI.
 
 ### 2. Singleton (Wzorzec Kreacyjny)
 * **Lokalizacja:** `DesignPatterns/Creational/OrderManager.cs`.
@@ -25,7 +25,7 @@ Projekt realizuje system obsługi zamówień w kawiarni, kładąc nacisk na elas
 ### 4. Facade (Wzorzec Strukturalny)
 * **Lokalizacja:** `DesignPatterns/Structural/OrderFulfillmentFacade.cs`.
 * **Problem:** Złożoność procesu realizacji zamówienia, obejmująca wycenę, zmianę statusów oraz komunikację między różnymi systemami.
-* **Uzasadnienie:** Fasada udostępnia prosty interfejs `ProcessAndCompleteOrder(id)`. Ukrywa ona przed UI skomplikowane kroki (obliczanie ceny końcowej, wielokrotne zmiany statusu, pauzy technologiczne), co upraszcza kod formularza i zmniejsza ryzyko błędów.
+* **Uzasadnienie:** Fasada udostępnia prosty interfejs `ProcessAndCompleteOrder(id)`. Ukrywa ona przed UI skomplikowane kroki (obliczanie ceny końcowej, wielokrotne zmiany statusu), co upraszcza kod formularza i zmniejsza ryzyko błędów.
 
 ### 5. Observer (Wzorzec Zachowań)
 * **Lokalizacja:** `DesignPatterns/Behavioral` (`IOrderObserver`, `BaristaDisplay`) oraz `Core/Order.cs`.
